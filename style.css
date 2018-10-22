@@ -1,0 +1,275 @@
+/* Overall Wrapper */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: ivory;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Navigation */
+#side-bar {
+    width: 10%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.flag {
+    width: 80%;
+}
+
+.language {
+    font-size: 2vw;
+    color: green;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 770px) {
+    .language {
+        font-size: 1.65vw;
+        color: green;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .language {
+        font-size: 1.25vw;
+        color: green;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/* Main Section */
+#main {
+    width: 85%;
+    margin-left: 5%;
+}
+
+
+
+/* Header */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.logo-box {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.logo {
+    float: left;
+    width: 75px;
+}
+
+
+.name-box {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.name {
+    float: right;
+    font-size: 19pt;
+    line-height: 0;
+}
+
+.title {
+    float: right;
+    clear: both;
+    font-size: 14pt;
+    font-style: italic;
+    margin: 0;
+}
+
+
+
+/* Banner */
+#banner {
+    width: 98%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* About Me */
+#about-me {
+    margin-top: 45px;
+}
+
+
+.about-me-title-box {
+    width: 100%;
+    text-align: left;
+}
+
+.about-me-title {
+    font-size: 18pt;
+}
+
+
+.about-me-image-box {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 770px) {
+    .about-me-image-box {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        text-align: center;
+    }
+}
+
+.about-me-image {
+    width: 36%;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 770px) {
+    .about-me-image {
+        width: 99%;
+        border-radius: 5%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about-me-image {
+        width: 66%;
+        border-radius: 50%;
+    }
+}
+
+
+.about-me-content-box {
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 770px) {
+    .about-me-content-box {
+        display: inline-block;
+        vertical-align: middle;
+        width: 66%;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: justify;
+    }
+}
+
+.about-me-content {
+    font-size: 13pt;
+    line-height: 1.5em;
+}
+
+
+
+/* Featured Work */
+#featured-work {
+    margin-top: 45px;
+}
+
+
+.featured-work-title-box {
+    width: 100%;
+    text-align: left;
+}
+
+.featured-work-title {
+    font-size: 18pt;
+}
+
+
+.featured-work-content-box {
+    text-align: center;
+}
+
+.featured-work-figure {
+    width: 66%;
+    margin-left: 90px;
+}
+
+@media screen and (min-width: 770px) {
+    .featured-work-figure {
+        display: inline-block;
+        width: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.featured-work-image {
+    width: 99%;
+    border-radius: 3%;
+    box-shadow: 3px 3px grey;
+}
+
+@media screen and (min-width: 770px) {
+    .featured-work-image {
+        width: 99%;
+        max-height: 160px;
+        border-radius: 6%;
+        box-shadow: 3px 3px grey;
+    }
+}
+
+.figure-caption {
+    font-size: 2vw;
+    font-weight: bold;
+    color: purple;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 770px) {
+    .figure-caption {
+        font-size: 1.65vw;
+        font-weight: bold;
+        color: purple;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .figure-caption {
+        font-size: 1.25vw;
+        font-weight: bold;
+        color: purple;
+        margin-top: 15px;
+    }
+}
