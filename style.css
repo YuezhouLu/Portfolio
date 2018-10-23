@@ -15,10 +15,7 @@ body {
 #container {
     max-width: 1200px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 35px 25px 35px 25px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -39,25 +36,22 @@ body {
 .language {
     font-size: 2vw;
     color: green;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin: 15px 0 40px;
 }
 
 @media screen and (min-width: 770px) {
     .language {
         font-size: 1.65vw;
         color: green;
-        margin-top: 15px;
-        margin-bottom: 40px;
+        margin: 15px 0 40px;
     }
 }
 
 @media screen and (min-width: 1000px) {
     .language {
-        font-size: 1.25vw;
+        font-size: 1.15vw;
         color: green;
-        margin-top: 15px;
-        margin-bottom: 40px;
+        margin: 15px 0 40px;
     }
 }
 
@@ -115,11 +109,42 @@ body {
     width: 98%;
     margin: auto;
     margin-top: 25px;
+    position: relative;
 }
 
 .banner-image {
     width: 100%;
     height: auto;
+    display: block;
+    opacity: 1;
+    transition: 1.5s ease;
+    backface-visibility: hidden;
+}
+
+.hover-image-container {
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Standard Syntax */
+    -ms-transform: translate(-50%, -50%); /* For IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* For Safari */
+    text-align: center; /* Not necessary as the hover-iamge width is 100%. */
+}
+
+#banner:hover .banner-image {
+    opacity: 0.3;
+}
+
+#banner:hover .hover-image-container {
+    opacity: 1;
+}
+
+.hover-image {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 
@@ -177,8 +202,7 @@ body {
 .about-me-content-box {
     vertical-align: middle;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
     text-align: justify;
 }
 
@@ -187,8 +211,7 @@ body {
         display: inline-block;
         vertical-align: middle;
         width: 66%;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding: 0 25px;
         text-align: justify;
     }
 }
@@ -229,8 +252,7 @@ body {
     .featured-work-figure {
         display: inline-block;
         width: 30%;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0px 10px;
     }
 }
 
@@ -267,7 +289,7 @@ body {
 
 @media screen and (min-width: 1000px) {
     .figure-caption {
-        font-size: 1.25vw;
+        font-size: 1vw;
         font-weight: bold;
         color: purple;
         margin-top: 15px;
