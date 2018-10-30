@@ -9,6 +9,9 @@
 
 
 ## Feature Updates:
+* _**updated on Oct 30, 2018:**_
+    >* Detailed the comments of the hover image container in the banner section.
+
 * _**updated on Oct 24, 2018:**_
     >* Revised grammar mistakes in the main paragraph.
     >* Updated the screenshot of the portfolio.

@@ -125,9 +125,12 @@ body {
     opacity: 0;
     transition: .5s ease;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    left: 50%; /* Using left here to adjust/squeeze the size of the imperial logo container,
+        forcing the width of the ic logo to be 50% of the banner section width. */
+    top: 50%; /* Using top here to put the ic logo (container) at a convinient position to be transformed later. */
     transform: translate(-50%, -50%); /* Standard Syntax */
+        /* percentage translate means moving the element according to the percentage of the element itself not the container.
+        (refer to: https://www.w3schools.com/css/css3_2dtransforms.asp) */
     -ms-transform: translate(-50%, -50%); /* For IE 9 */
     -webkit-transform: translate(-50%, -50%); /* For Safari */
     text-align: center; /* Not necessary as the hover-iamge width is 100%. */
