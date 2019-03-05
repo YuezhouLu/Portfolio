@@ -23,6 +23,9 @@ Either look at it via the GitHub Pages link or simply download or clone this por
 
 
 ## Feature Updates:
+* _**updated on Mar 5, 2019:**_
+    >* Updated portfolio contents and responsive features.
+
 * _**updated on Feb 25, 2019:**_
     >* Updated this README.md file.
 
